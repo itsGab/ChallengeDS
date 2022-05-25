@@ -92,3 +92,85 @@ def classvar(df):
         'quantitativas': quantitativas,
         'qualitativas': qualitativas
         }
+
+categorical_maps = {
+    'Churn' : {
+        'No': 0,
+        'Yes': 1,
+    },
+    'gender': {
+        'Female': 0,
+        'Male': 1
+    },
+    'SeniorCitizen': {
+        'No': 0, # menos de 65
+        'Yes': 1 # 65 ou mais
+    },
+    'Partner': {
+        'Yes': 1,
+        'No': 0
+    },
+    'Dependents': {
+        'Yes': 1,
+        'No': 0
+    },
+    'PhoneService': {
+        'Yes': 1,
+        'No': 0
+    },
+    'MultipleLines': {
+        'Yes': 2,
+        'No': 1,
+        'No phone service' : 0
+    },
+    'InternetService': {
+        'DSL': 1,
+        'Fiber optic': 2,
+        'No': 0
+    },
+    'OnlineSecurity': {
+        'No': 1,
+        'Yes': 2,
+        'No internet service': 0
+    },
+    'OnlineBackup': {
+        'Yes': 2,
+        'No': 1, 
+        'No internet service': 0
+    },
+    'DeviceProtection': {
+        'Yes': 2,
+        'No': 1, 
+        'No internet service': 0
+    },
+    'TechSupport': {
+        'Yes': 2,
+        'No': 1, 
+        'No internet service': 0
+    },
+    'StreamingTV': {
+        'Yes': 2,
+        'No': 1, 
+        'No internet service': 0
+    },
+    'StreamingMovies': {
+        'Yes': 2,
+        'No': 1, 
+        'No internet service': 0
+    },
+    'Contract': {
+        'One year': 12,
+        'Month-to-month': 1,
+        'Two year': 24
+    },
+    'PaperlessBilling': {
+        'Yes': 1,
+        'No': 0
+    },
+    'PaymentMethod': {
+        'Mailed check':0,
+        'Electronic check':1,
+        'Credit card (automatic)':2,
+        'Bank transfer (automatic)':3
+    }
+}
